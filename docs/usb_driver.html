@@ -1,0 +1,173 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>USB Driver Installation &#8212; DE7301  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Theory of Operation" href="operation.html" />
+    <link rel="prev" title="USB Functions" href="usb.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In Limited Beta. Product launch targeted Q2 ‘23. Everything is subject to change.</p>
+</div>
+<script type='text/javascript'>
+window.smartlook||(function(d) {
+var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+})(document);
+smartlook('init', '012f3e6639a282f12601e22b6cc57a8189b33d1c', { region: 'eu' });
+</script><section id="usb-driver-installation">
+<h1>USB Driver Installation<a class="headerlink" href="#usb-driver-installation" title="Permalink to this heading">¶</a></h1>
+<p>The USB-C port may require drivers to be installed depending on your operating system</p>
+<section id="mac">
+<h2>Mac<a class="headerlink" href="#mac" title="Permalink to this heading">¶</a></h2>
+<p>Drivers are distributed by Apple and no additional steps are required, it just works.</p>
+</section>
+<section id="windows">
+<h2>Windows<a class="headerlink" href="#windows" title="Permalink to this heading">¶</a></h2>
+<p>On Windows, a specific process is required to install drivers for the DE7301.</p>
+<ol class="arabic">
+<li><p>Download and install <a class="reference external" href="https://zadig.akeo.ie/">Zadig</a>, a utility to install custom drivers</p></li>
+<li><p>Open Zadig.exee, clicking “Yes” to any Windows prompts</p></li>
+<li><p>In the Options Menu, Check “List All Devices”</p>
+<img alt="_images/check_all.png" src="_images/check_all.png" />
+</li>
+<li><p>In the Options menu, Uncheck “Ignore Hubs or Composite Parents”</p>
+<img alt="_images/uncheck_hide.png" src="_images/uncheck_hide.png" />
+</li>
+<li><p>In the drop down menu locate “Dual RS232-HS (Composite Parent)</p>
+<ul class="simple">
+<li><p>Do NOT select “Dual RS232-HS (Interface 0)”</p></li>
+<li><p>Do NOT select “Dual RS232-HS (Interface 1)”.</p></li>
+</ul>
+</li>
+<li><p>Verify that The USB ID matches the below picture.</p>
+<img alt="_images/composite-parent.png" src="_images/composite-parent.png" />
+</li>
+<li><p>Ensure “WinUSB” is selected above the “Replace Driver” button</p></li>
+<li><p>After double checking the Device USB ID, click “Replace Driver”</p></li>
+<li><p>If you are prompted to confirm replacement of a system driver, click “Yes”</p>
+<img alt="_images/click_yes.png" src="_images/click_yes.png" />
+</li>
+<li><p>Wait for installation to complete. This may take up to 5 minutes</p>
+<img alt="_images/installed.png" src="_images/installed.png" />
+</li>
+</ol>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">DE7301</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remote.html">Internet &amp; WiFi Access</a></li>
+<li class="toctree-l1"><a class="reference internal" href="security.html">Security</a></li>
+<li class="toctree-l1"><a class="reference internal" href="save_mp4.html">Save to MP4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shared_state.html">Sharing the Front Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">User Extensions/API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Application Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usb.html">USB Functions</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">USB Driver Installation</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#mac">Mac</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#windows">Windows</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="operation.html">Theory of Operation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="usb.html" title="previous chapter">USB Functions</a></li>
+      <li>Next: <a href="operation.html" title="next chapter">Theory of Operation</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Great Northern Circuits, LLC.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.1.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/usb_driver.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

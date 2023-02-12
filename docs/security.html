@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Security &#8212; DE7301  documentation</title>
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/alabaster.css" />
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx_highlight.js"></script>
+    <link rel="author" title="About these documents" href="about.html" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Save to MP4" href="save_mp4.html" />
+    <link rel="prev" title="Internet &amp; WiFi Access" href="remote.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In Limited Beta. Product launch targeted Q2 ‘23. Everything is subject to change.</p>
+</div>
+<script type='text/javascript'>
+window.smartlook||(function(d) {
+var o=smartlook=function(){ o.api.push(arguments)},h=d.getElementsByTagName('head')[0];
+var c=d.createElement('script');o.api=new Array();c.async=true;c.type='text/javascript';
+c.charset='utf-8';c.src='https://web-sdk.smartlook.com/recorder.js';h.appendChild(c);
+})(document);
+smartlook('init', '012f3e6639a282f12601e22b6cc57a8189b33d1c', { region: 'eu' });
+</script><section id="security">
+<h1>Security<a class="headerlink" href="#security" title="Permalink to this heading">¶</a></h1>
+<p>The DE7301 control channel (containing buttons, keys, etc) secured by an industry standard TLSv1.2 connection, which is
+the same protocol web browsers use to encrypt your information.</p>
+<p>To login to the device, a “Radio Access File” (RAF) is used.
+A RAF contains a cryptographic secret key that possession of proves you are authorized to
+access the radio. Both you and the DE7301 must have an identical RAF for a connection to establish.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Do not share this file. Anyone with access to this file can have complete control over the device.</p>
+</div>
+<p>The RAF can be reset by plugging your Mac or PC into the USB-C port and following
+instructions for resetting in the <a class="reference internal" href="usb.html"><span class="doc">USB Security Settings</span></a> documentation.</p>
+<p>Screen data is not encrypted in Local LAN Mode. It is encrypted in over-the-internet Proxy Mode.</p>
+<section id="out-of-the-box">
+<h2>Out of the Box<a class="headerlink" href="#out-of-the-box" title="Permalink to this heading">¶</a></h2>
+<p>By default, when your DE7301 is manufactured, a RAF is generated and programmed into the device.
+This RAF was included in your welcome packet.
+It is recommended, but not required, to generate a new RAF upon first use.</p>
+</section>
+<section id="importing-a-raf">
+<h2>Importing a RAF<a class="headerlink" href="#importing-a-raf" title="Permalink to this heading">¶</a></h2>
+<p>On first open of the application, you should be prompted to import a Radio Access File. Clikc “Import” and navigate to the file.
+Once imported, you may click “Close”</p>
+<img alt="_images/no_raf.png" src="_images/no_raf.png" />
+<section id="exporting-a-raf">
+<h3>Exporting a RAF<a class="headerlink" href="#exporting-a-raf" title="Permalink to this heading">¶</a></h3>
+<p>A RAF can also be imported or exported by going to the “File” menu and selecting “Radio Credentials Import/Export”</p>
+</section>
+</section>
+<section id="security-differences-local-vs-proxy">
+<h2>Security Differences, Local vs Proxy<a class="headerlink" href="#security-differences-local-vs-proxy" title="Permalink to this heading">¶</a></h2>
+<section id="local-lan-mode-security">
+<h3>Local LAN Mode Security<a class="headerlink" href="#local-lan-mode-security" title="Permalink to this heading">¶</a></h3>
+<p>In Local LAN mode, the connection to the DE7301 has two channels.</p>
+<ul class="simple">
+<li><p><em>DE7301</em> TCP Control Channel, secured by the RAF via TLS1.2</p></li>
+<li><p><em>DE7301</em> UDP Data Channel, a not-encrypted display signal</p></li>
+</ul>
+</section>
+<section id="proxy-mode-security">
+<h3>Proxy Mode Security<a class="headerlink" href="#proxy-mode-security" title="Permalink to this heading">¶</a></h3>
+<p>In Proxy Mode, the proxy server connects to the DE7301 hardware identically, but a single Client Connection is added.
+Client connections are TCP only, and secured using the same RAF. Multiple Clients may be simultaneously connected</p>
+<ul class="simple">
+<li><p><em>DE7301</em> TCP Control Channel, secured by the RAF via TLS1.2</p></li>
+<li><p><em>DE7301</em> UDP Data Channel, a not-encrypted display signal</p></li>
+<li><p><em>Proxy Client</em> TCP Control and Data Channel, secured by the RAF via TLS1.2</p></li>
+</ul>
+<p>The Proxy server has behavior to eventually ban clients that repeatedly fail the TLS1.2 connection handshake.
+Ban times start at 10 seconds and scale up based on the number of failed attempts.
+A ban can be cleared by closing an reopening the proxy application.</p>
+</section>
+</section>
+<section id="what-is-a-raf">
+<h2>What is a RAF?<a class="headerlink" href="#what-is-a-raf" title="Permalink to this heading">¶</a></h2>
+<p>A Radio Access File is a 128 Bit Pre-Shared Key (PSK) plus an 8-Bit CRC.
+This is used in the standardized TLS1.2  <a class="reference external" href="https://datatracker.ietf.org/doc/html/rfc4279#section-1">TLS_PSK_WITH_AES_128_GCM_SHA256</a>
+mode. No custom or modified cryptography is utilized.</p>
+<p>Usernames and passwords is not a supported authentication mechanism; a PSK may not be derived
+through a Username/Password.</p>
+<p>The Pre-shared Key is generated using the computer platform’s
+<a class="reference external" href="https://doc.qt.io/qt-6/qrandomgenerator.html#system">cryptographically safe RNG</a>.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="index.html">DE7301</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
+<li class="toctree-l1"><a class="reference internal" href="remote.html">Internet &amp; WiFi Access</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Security</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#out-of-the-box">Out of the Box</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#importing-a-raf">Importing a RAF</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#exporting-a-raf">Exporting a RAF</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#security-differences-local-vs-proxy">Security Differences, Local vs Proxy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#local-lan-mode-security">Local LAN Mode Security</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#proxy-mode-security">Proxy Mode Security</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-a-raf">What is a RAF?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="save_mp4.html">Save to MP4</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shared_state.html">Sharing the Front Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="api.html">User Extensions/API</a></li>
+<li class="toctree-l1"><a class="reference internal" href="settings.html">Application Settings</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usb.html">USB Functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="usb_driver.html">USB Driver Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="operation.html">Theory of Operation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="remote.html" title="previous chapter">Internet &amp; WiFi Access</a></li>
+      <li>Next: <a href="save_mp4.html" title="next chapter">Save to MP4</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2023, Great Northern Circuits, LLC.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 6.1.3</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/security.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

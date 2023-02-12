@@ -1,0 +1,7 @@
+Profile,Quality,Bitrate,Compatability
+H264_RGB_CRF_0,Highest,Highest,Only VLC
+H264_YUV444_CRF_0,2nd Highest,Highest,Limited
+**H264_YUV420_CRF17**,"""Lossless""",Good,Common
+H264_YUV420_CRF27,Worse,Lower,Common
+H264_YUV420_CRF30,Much Worse,Lower,Common
+H264_YUV420_CRF51,Terrible,Minimum,Common
