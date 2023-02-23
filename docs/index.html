@@ -12,10 +12,9 @@
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
-    <link rel="author" title="About these documents" href="about.html" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Getting Started" href="getting_started.html" />
+    <link rel="next" title="Installation" href="installation.html" />
    
   <link rel="stylesheet" href="_static/custom.css" type="text/css" />
   
@@ -47,97 +46,13 @@ smartlook('init', '012f3e6639a282f12601e22b6cc57a8189b33d1c', { region: 'eu' });
 <h1>DE7301 Introduction<a class="headerlink" href="#de7301-introduction" title="Permalink to this heading">¶</a></h1>
 <iframe id="ytplayer" type="text/html" width="640" height="360"
 src="https://www.youtube.com/embed/1HstbYwh1uc?autoplay=0"
-frameborder="0"></iframe><p>The Display Extender 7301 (DE7301) is a no-soldering, reversible kit for the Icom IC-7300 which creates a virtual radio front panel
-on your Mac or PC, capturing real time pixel perfect 60FPS video from your radio.
-This is done by adding an Ethernet connection to your radio; it does not use the radio’s USB port.</p>
-<p>Being a no-solder kit, the <a class="reference internal" href="installation.html"><span class="doc">installation</span></a> takes approximately an hour and
-requires minimal tooling (screwdriver, multimeter). Also required is
-patience, a delicate touch, good lighting, and possibly magnification.</p>
-<p>Installed between the Front Unit (Display) and the Main Unit (processor board),
-the DE7301 monitors the display data and multiplexes
-physical controls with virtual ones. <a class="reference internal" href="shared_state.html"><span class="doc">Both the physical and virtual elements work simultaneously</span></a>,
-and the user experience at the radio is unchanged.</p>
-<p>The DE7301 Hardware and DE7301 Application do not require any ‘cloud’ services or monthly subscriptions to function.
-Great Northern Circuits, LLC does not offer any subscription based services.</p>
-<p>The DE7301 can operate in two different network access modes:</p>
-<ul class="simple">
-<li><p><a class="reference internal" href="remote.html"><span class="doc">LAN Local Mode.</span></a></p>
-<ul>
-<li><p>Prioritizes lowest possible latency from the IC7300 to your Mac/PC</p></li>
-<li><p>Display timing is exactly locked to radio’s display</p></li>
-<li><p>Utilizes enormous network bandwidth (130Mbit/s)</p></li>
-<li><p>Only suitable for a local LAN</p></li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="remote.html"><span class="doc">Proxy Mode</span></a>.</p>
-<ul>
-<li><p>Prioritizes lossless compression of the signal.</p></li>
-<li><p>Utilizes low bandwidth (Less than 5Mbit/s)</p></li>
-<li><p>Suitable for remote connections over the internet, or over WiFi</p></li>
-<li><p>Display timing is unlocked</p></li>
-<li><p>Requires a PC to run proxy software</p></li>
-</ul>
-</li>
-</ul>
-<p>Check out the <a class="reference internal" href="getting_started.html"><span class="doc">Getting Started</span></a> Guide for more.</p>
-<figure class="align-default" id="id1">
-<a class="reference external image-reference" href="./_static/beta_unit_large.jpg"><img alt="_images/beta_unit.jpg" src="_images/beta_unit.jpg" /></a>
-<figcaption>
-<p><span class="caption-text">Beta Unit</span><a class="headerlink" href="#id1" title="Permalink to this image">¶</a></p>
-</figcaption>
-</figure>
-<section id="features">
-<h2>Features<a class="headerlink" href="#features" title="Permalink to this heading">¶</a></h2>
-<p>The hardware adds two new ports to your radio.</p>
-<ul class="simple">
-<li><p>Gigabit Ethernet: Secure control and realtime streaming of the display.</p></li>
-<li><p>USB-C: Firmware updates, settings, and power (5V DC).</p></li>
-</ul>
-<p>The software’s major features include:</p>
-<ul class="simple">
-<li><p>Displaying a resizable copy of the radio screen in real time.</p></li>
-<li><p>Ability to click the touch screen with a mouse.</p></li>
-<li><p>Controls to adjust the VFO, Volume, Multi, Band Pass, RF/Squelch dials.</p></li>
-<li><p><a class="reference internal" href="security.html"><span class="doc">Secured by default</span></a>, using industry standard protocols (TLSv1.2).</p></li>
-<li><p><a class="reference internal" href="save_mp4.html"><span class="doc">Record the screen to an .mp4 (h264)</span></a> for editing in other software.</p></li>
-<li><p><a class="reference internal" href="api.html"><span class="doc">Javascript based API</span></a>, allowing custom macros/scripts on the front panel.</p></li>
-<li><p>Support for MIDI “DJ Controllers” for additional external dials (Such as VFO) and buttons.</p></li>
-</ul>
-</section>
-<section id="hardware">
-<h2>Hardware<a class="headerlink" href="#hardware" title="Permalink to this heading">¶</a></h2>
-<p>The kit includes:</p>
-<ul class="simple">
-<li><p>Assembled and tested unit.</p></li>
-<li><p>Cables for internal radio connections.</p></li>
-<li><p>The 3D printed parts:</p>
-<ul>
-<li><p>Mounting Bracket.</p></li>
-<li><p>Fan Spacer.</p></li>
-</ul>
-</li>
-</ul>
-<p>Beta kits do NOT include, but are available for purchase:</p>
-<ul class="simple">
-<li><p>USB-C Cable</p></li>
-<li><p>Ethernet Cable</p>
-<ul>
-<li><p>Pre-terminated ethernet cables will not fit through the IC7300 housing, except for a limited few specifically sold here.</p></li>
-<li><p>If you do not purchase one, you must be able to crimp your own. This is the recommended approach.</p></li>
-</ul>
-</li>
-<li><p>USB-C Power Supply</p></li>
-</ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>DO NOT EXCEED 5.5V ON THE USB-C POWER SUPPLY.</p>
-<p>Equipment damage will occur if this maximum is exceeded.</p>
-<p>Under no circumstances apply 12VDC to the DE7301</p>
-</div>
+frameborder="0"></iframe><p>This is the homepage for the documentation of the Display Extender 7301 (DE7301) a no-soldering,
+reversible kit for the Icom IC-7300 which creates a virtual radio front panel
+on your Mac or PC, capturing real time pixel perfect 60FPS video from your radio.</p>
+<p>Additional blog posts covering specific topics are available here:</p>
 <div class="toctree-wrapper compound">
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#before-you-begin">Before you begin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#disclaimer-warning">Disclaimer, Warning</a></li>
@@ -156,7 +71,6 @@ Great Northern Circuits, LLC does not offer any subscription based services.</p>
 <li class="toctree-l2"><a class="reference internal" href="installation.html#reinstall-bottom-cover">Reinstall Bottom Cover</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="remote.html">Internet &amp; WiFi Access</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="remote.html#local-lan-mode">Local LAN Mode</a></li>
 <li class="toctree-l2"><a class="reference internal" href="remote.html#proxy-mode">Proxy Mode</a></li>
@@ -237,10 +151,8 @@ Great Northern Circuits, LLC does not offer any subscription based services.</p>
 <li class="toctree-l2"><a class="reference internal" href="operation.html#hdmi-out-semiconductor-shortage">HDMI Out/Semiconductor Shortage</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 </ul>
 </div>
-</section>
 </section>
 
 
@@ -262,9 +174,7 @@ Great Northern Circuits, LLC does not offer any subscription based services.</p>
 <h3>Navigation</h3>
 <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="getting_started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="faq.html">FAQ</a></li>
 <li class="toctree-l1"><a class="reference internal" href="remote.html">Internet &amp; WiFi Access</a></li>
 <li class="toctree-l1"><a class="reference internal" href="security.html">Security</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_mp4.html">Save to MP4</a></li>
@@ -275,14 +185,13 @@ Great Northern Circuits, LLC does not offer any subscription based services.</p>
 <li class="toctree-l1"><a class="reference internal" href="usb.html">USB Functions</a></li>
 <li class="toctree-l1"><a class="reference internal" href="usb_driver.html">USB Driver Installation</a></li>
 <li class="toctree-l1"><a class="reference internal" href="operation.html">Theory of Operation</a></li>
-<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
 </ul>
 
 <div class="relations">
 <h3>Related Topics</h3>
 <ul>
   <li><a href="#">Documentation overview</a><ul>
-      <li>Next: <a href="getting_started.html" title="next chapter">Getting Started</a></li>
+      <li>Next: <a href="installation.html" title="next chapter">Installation</a></li>
   </ul></li>
 </ul>
 </div>
