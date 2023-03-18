@@ -390,3 +390,23 @@ Reinstall Bottom Cover
 
 Reinstall the bottom cover
 
+
+
+++++++++++++++++++++++
+Radio Functional Test
+++++++++++++++++++++++
+
+To determine if the install was successful, perform the following:
+
+
+.. warning::
+
+    If one of these steps fail, immediately remove 12V power
+    
+* Leave the DE7301 USB Cable Disconnected
+* Connect IC7300 to dummy load, if available.
+* Connect IC7300 to Power and Ground. 
+* Apply 12V to the radio
+* Press the PWR button
+* Verify the display is active and working
+* Verify the main VFO knob works by turning it three turns.
