@@ -349,18 +349,23 @@ Perform Continuity Test
 +++++++++++++++++++++++
 
 Find the continuity test pads on the DE7301.
+The purpose of the continuity test is to ensure that no pins are shorted.
+If you hear a beep, stop! Contact support!
 Using a multimeter on the continuity setting, check every pad against every other pad.
 The best method to do this is bottom to top, left to right. Start by testing the bottom left pad to radio chassis.
 
 .. warning::
 
     This is critical, do not skip! This will detect incorrectly installed cables.
+    If you hear a beep, stop! Contact support!
 
 .. raw:: html
 
     <iframe id="ytplayer" type="text/html" width="640" height="360"
     src="https://www.youtube.com/embed/5Ow-qCF0pyI?autoplay=0"
     frameborder="0"></iframe>
+    
+If you hear a beep, stop! Contact support!
 
 +++++++++++++
 Reinstall Fan
