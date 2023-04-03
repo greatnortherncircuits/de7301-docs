@@ -157,7 +157,7 @@ PTRX-7300 Note
 --------------
 
 
-If you have a radio with a PTRX-7300 installed, ensure you secure the mod with tape as well. 
+If you have a radio with a PTRX-7300 installed, ensure you secure the mod with tape. This will prevent the mod from falling out. 
 A community member suggested `this configuration <./_static/install_img_large/DE7301_existing_radio_mod_taped.jpg>`_. 
 
 
@@ -185,7 +185,7 @@ Remove the two remaining screws that retain the front panel
    Failure to do so may damage cabling from the radio body to the front panel.
 
 
-Move the front panel by tilting away from you. Once tiled, slide backwards away from the rear engagement pins, then bring towards your body.
+Move the front panel by tilting away from you. Once titled, slide backwards away from the rear engagement pins, then bring towards your body.
 
 .. image:: /img/install_img/front_panel_tilting.jpeg
    :target: ./_static/install_img_large/front_panel_tilting.jpeg
@@ -238,7 +238,7 @@ Push gently until you feel the connector bottom out.
     frameborder="0"></iframe>
 
 
-Once installed, perform an inspection. Correct insertion of this cable is critical.
+Correct insertion of this cable is critical. Once installed, perform an inspection. Ensure that:
 
 * The copper contacts are facing towards you.
    * If they are not, the cable is installed backwards
@@ -509,13 +509,24 @@ Install the spacer, fan, and fan shroud, ensuring the new cables are routed thro
    :target: ./_static/install_img_large/spacer_installed.jpeg
 
 
-
+Plug the fan connector back into the mainboard. You may need to un-twist the wire to have enough slack.
 
 ++++++++++++++++++++++
 Reinstall Bottom Cover
 ++++++++++++++++++++++
 
 Reinstall the top case, including the two pairs of screws on each side.
+
+++++++++++++++++++++++
+Apply Firmware Sticker
+++++++++++++++++++++++
+
+The DE7301 is not intended to be powered while updating the firmware of the radio via an SD card.
+
+Apply the label to the top of the radio to communicate this.
+
+.. image:: /img/install_img/apply_label.jpeg
+   :target: ./_static/install_img_large/apply_label.jpeg
 
 
 

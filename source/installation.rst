@@ -157,7 +157,7 @@ PTRX-7300 Note
 --------------
 
 
-If you have a radio with a PTRX-7300 installed, ensure you secure the mod with tape as well. 
+If you have a radio with a PTRX-7300 installed, ensure you secure the mod with tape. This will prevent the mod from falling out. 
 A community member suggested `this configuration <./_static/install_img_large/DE7301_existing_radio_mod_taped.jpg>`_. 
 
 
@@ -171,7 +171,7 @@ Remove the two screws on the top of the radio retaining the front panel
    :target: ./_static/install_img_large/bottom_remove_2_screws.png
 
 
-Rotate the radio onto it's side. The VFO knob should be down, and the radio main board should be facing you.
+Rotate the radio onto it's side so that the VFO knob should be down, and the radio main board should be facing you.
 
 Remove the two remaining screws that retain the front panel
 
@@ -185,7 +185,7 @@ Remove the two remaining screws that retain the front panel
    Failure to do so may damage cabling from the radio body to the front panel.
 
 
-Move the front panel by tilting away from you. Once tiled, slide backwards away from the rear engagement pins, then bring towards your body.
+Move the front panel by tilting away from you. Once titled, slide backwards away from the rear engagement pins, then bring towards your body.
 
 .. image:: /img/install_img/front_panel_tilting.jpeg
    :target: ./_static/install_img_large/front_panel_tilting.jpeg
@@ -238,7 +238,7 @@ Push gently until you feel the connector bottom out.
     frameborder="0"></iframe>
 
 
-Once installed, perform an inspection. Correct insertion of this cable is critical.
+Correct insertion of this cable is critical. Once installed, perform an inspection. Ensure that:
 
 * The copper contacts are facing towards you.
    * If they are not, the cable is installed backwards
@@ -319,14 +319,16 @@ Undisassemble
 Partially re-assemble the radio, leaving the bottom case off
 
 * Reinstall the Front Panel audio cable
-* Align the front panel with the top side alignment pins and put in position
+* Align the front panel with the top side alignment pins
+* Ensure that the "long flex" and the "short flex" are both facing the same direction (not 'tucked away')
 * Reinstall the two silver front panel retainer screws on the side closest to you (the bottom)
 * Reinstall the remaining two silver front panel retainer screws on the opposite side (the top)
 * Remove tape on the speaker (and PTRX-7300)
 * Reinstall the top case, including the two pairs of screws on each side.
 * Do NOT reinstall the bottom case at this time. 
 * Do NOT reinstall the fan at this time.
-
+* Orient the radio so the bottom side (without the cover) is up
+* Rotate the radio so that the front panel is closest to your body
 
 +++++++++++++++++++++
 Reconnect SD Card
@@ -509,13 +511,24 @@ Install the spacer, fan, and fan shroud, ensuring the new cables are routed thro
    :target: ./_static/install_img_large/spacer_installed.jpeg
 
 
-
+Plug the fan connector back into the mainboard. You may need to un-twist the wire to have enough slack.
 
 ++++++++++++++++++++++
 Reinstall Bottom Cover
 ++++++++++++++++++++++
 
 Reinstall the top case, including the two pairs of screws on each side.
+
+++++++++++++++++++++++
+Apply Firmware Sticker
+++++++++++++++++++++++
+
+The DE7301 is not intended to be powered while updating the firmware of the radio via an SD card.
+
+Apply the label to the top of the radio to communicate this.
+
+.. image:: /img/install_img/apply_label.jpeg
+   :target: ./_static/install_img_large/apply_label.jpeg
 
 
 
