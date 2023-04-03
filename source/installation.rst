@@ -10,7 +10,7 @@ Installation of the DE7301 requires about an hour of time in an ESD safe environ
 
 * Read through the installation documentation entirely
 * Locate a Multimeter with a 'Continuity Beep' function. 
-* Locate a JIS (or Phillips) screwdriver
+* Locate a JIS (or Phillips) screwdriver, long enough to set a screw in a 10mm deep hole
 * Locate masking tape (or other low tack tape)
 
 
@@ -40,10 +40,20 @@ Remove Bottom Cover
 
 Place your radio on the desk, so that the display is "upside down". Do not move the orentiation of the radio unless instructed to.
 
-Remove the bottom cover of the IC7300 by removing all of the black screws on the bottom and sides of the case
+Remove the 6 screws on the bottom of the case
 
-.. image:: /img/install_img/bottom_removed.jpeg
-   :target: ./_static/install_img_large/bottom_removed.jpeg
+.. image:: /img/install_img/bottom_screws.png
+   :target: ./_static/install_img_large/bottom_screws.png
+   
+Remove 8 screws on the sides of the case (each size has 4 screws)
+
+
+.. image:: /img/install_img/side_L_screws.png
+   :target: ./_static/install_img_large/side_L_screws.png
+   
+   
+.. image:: /img/install_img/side_R_screws.png
+   :target: ./_static/install_img_large/side_R_screws.png
 
 ++++++++++++++++++++++
 Disconnect Front Panel
@@ -59,11 +69,20 @@ and pinch with your thumb on top. In a smooth firm motion, unplug the flex cable
 
 .. image:: /img/install_img/remove_sd_flex.jpeg
    :target: ./_static/install_img_large/remove_sd_flex.jpeg
+   
+Towards the back of the radio, un-tuck the front panel audio cable from behind the shield can.
+
+.. image:: /img/install_img/free_audio_cable_untuck.jpeg
+   :target: ./_static/install_img_large/free_audio_cable_untuck.jpeg
+
 
 Using a screwdriver, gently work the two Front Panel audio cables from under the Mainboard.
 
 .. image:: /img/install_img/free_audio_cables.jpeg
    :target: ./_static/install_img_large/free_audio_cables.jpeg
+   
+The freed audio cables should look similar to the following:
+
 .. image:: /img/install_img/freed_cables.jpeg
    :target: ./_static/install_img_large/freed_cables.jpeg
 
@@ -72,12 +91,19 @@ Locate the primary display flex cable.
 .. image:: /img/install_img/original_display_flex.jpeg
    :target: ./_static/install_img_large/original_display_flex.jpeg
 
-Place your index finger along the underside of the flex cable, and pinch with your thumb. In a smooth firm motion, unplug the flex cable from the main board
 
-.. note::
+Place your index finger along the underside of the flex cable, and pinch with your thumb.
 
-   These connectors have high friction, and will suddenly release.
-   Ensure you do not damage anything by allowing the cable to be ripped away during release
+In a smooth firm motion, *pulling straight up*, unplug the flex cable from the main board. 
+
+.. warning::
+
+   These connectors have high friction, and will suddenly release. 
+   
+   Use caution to not rip cable away after release. 
+   
+   Do not pull the cable at an angle; pull straight up. Pulling at an angle may rip the connector from the display
+   
 
 .. raw:: html
 
@@ -105,27 +131,45 @@ Remove top cover
 
 Turn the radio over, ensuring to not damage any loose flat flex cables when changing orientation.
 
-Remove the top cover of the IC7300 by removing all the black screws on the top and sides of the case.
+Remove the top cover of the IC7300 by removing all of the screws on the top case.
 
-.. note::
-
-   Once the front and back covers are removed, the front panel is no longer secured to the radio body. When moving the radio, support the front panel with your hands.
-   Failure to do so may damage cabling from the radio body to the front panel.
-
-
-Using a piece of low tack tape (Such as masking tape), tape the speaker into place so it does not fall when the radio orentation is later changed.
+Using a piece of low tack tape (Such as masking tape), tape the speaker into place so it does not fall when the radio orientation is later changed.
 
 .. image:: /img/install_img/speaker_masking_tape.jpeg
    :target: ./_static/install_img_large/speaker_masking_tape.jpeg
+   
+   
+++++++++++++++
+PTRX-7300 Note
+++++++++++++++
+
+If you have a radio with a PTRX-7300 installed, ensure you secure the mod with tape as well. 
+A community member suggested `this configuration <./_static/install_img_large/DE7301_existing_radio_mod_taped.jpg>`_. 
+
 
 ++++++++++++++++++
 Remove front panel
 ++++++++++++++++++
 
-While holding the front panel, rotate the radio onto it's side. The VFO knob should be down, and the radio main board should be facing you.
+Remove the two screws on the top of the radio retaining the front panel
 
-.. image:: /img/install_img/sideways_radio.jpeg
-   :target: ./_static/install_img_large/sideways_radio.jpeg
+.. image:: /img/install_img/bottom_remove_2_screws.png
+   :target: ./_static/install_img_large/bottom_remove_2_screws.png
+
+
+Rotate the radio onto it's side. The VFO knob should be down, and the radio main board should be facing you.
+
+Remove the two remaining screws that retain the front panel
+
+.. image:: /img/install_img/sideways_radio.png
+   :target: ./_static/install_img_large/sideways_radio.png
+
+
+.. note::
+
+   At this point, the front panel is no longer secured to the radio body. When moving the radio, support the front panel with your hands.
+   Failure to do so may damage cabling from the radio body to the front panel.
+
 
 Move the front panel by tilting away from you. Once tiled, slide backwards away from the rear engagement pins, then bring towards your body.
 
@@ -173,7 +217,7 @@ Push gently until you feel the connector bottom out.
 .. raw:: html
 
     <iframe id="ytplayer" type="text/html" width="640" height="360"
-    src="https://www.youtube.com/embed/nAipGuy1DXM?autoplay=0"
+    src="https://www.youtube.com/embed/rHjMmxKUURg?autoplay=0"
     frameborder="0"></iframe>
 
 
@@ -185,6 +229,8 @@ Once installed, perform an inspection. Correct insertion of this cable is critic
    * If it is not, the cable was inserted crooked
 * Ensure that the length of copper visible on each contact is of equal length.
    * If they are not, the cable may not be fully seated or may be installed at an angle.
+* Apply light upward pressure on the flex cable, ensuring it does not dislodge the flex
+
 
 .. image:: /img/install_img/new_long_flex_inspection_frontpanel.jpeg
    :target: ./_static/install_img_large/new_long_flex_inspection_frontpanel.jpeg
@@ -202,7 +248,7 @@ Push gently until you feel the connector bottom out.
 .. raw:: html
 
     <iframe id="ytplayer" type="text/html" width="640" height="360"
-    src="https://www.youtube.com/embed/H6afqdR2eS0?autoplay=0"
+    src="https://www.youtube.com/embed/zAHt0U3zFg4?autoplay=0"
     frameborder="0"></iframe>
 
 
@@ -214,6 +260,8 @@ Once installed, perform an inspection. Correct insertion of this cable is critic
    * If it is not, the cable was inserted crooked
 * Ensure that the length of copper visible on each contact is of equal length.
    * If they are not, the cable may not be fully seated or may be installed at an angle.
+* Apply light upward pressure on the flex cable, ensuring it does not dislodge the flex
+
 
 .. image:: /img/install_img/new_short_flex_inspection_mainbody.jpeg
    :target: ./_static/install_img_large/new_short_flex_inspection_mainbody.jpeg
@@ -223,25 +271,23 @@ Once installed, perform an inspection. Correct insertion of this cable is critic
 Install Retaining Bracket
 +++++++++++++++++++++++++
 
-.. note::
+Locate and remove screws labeled 2, 3, 4 on the Main board. They are labeled on the main board
+silk screen, and called out in the image below.
 
-    Bracket is being redesigned to be a single monolithic part, instead of 3 small parts.
-    These instructions will change.
+.. image:: /img/install_img/locate_2_3_4.jpeg
+   :target: ./_static/install_img_large/locate_2_3_4.jpeg
 
-Locate "Screw 3" at right side closest to you. Remove this screw, and reinstall with the bracket. Do not overtighten as this may cause the plastic part to yield.
+Line up the bracket with the screw holes, and reinstall screw 2, 3, 4. 
+Do not install the DE7301 at this time. 
+The SD Card Flex cable should be entirely above (not below) the bracket.
 
-.. image:: /img/install_img/bracket_screw3.jpeg
-   :target: ./_static/install_img_large/bracket_screw3.jpeg
+.. warning::
 
-Locate "Screw 2" near the middle closest to you. Remove this screw, and reinstall with the bracket. Do not overtighten as this may cause the plastic part to yield.
+   Do not over tighten screws, as the plastic may yield. Snug tight is appropriate.
+   
+.. image:: /img/install_img/bracket_installed.jpeg
+   :target: ./_static/install_img_large/bracket_installed.jpeg
 
-.. image:: /img/install_img/bracket_screw2.jpeg
-   :target: ./_static/install_img_large/bracket_screw2.jpeg
-
-Locate "Screw 4". Remove this screw, and reinstall with the bracket. Do not overtighten as this may cause the plastic part to yield.
-
-.. image:: /img/install_img/bracket_screw4.jpeg
-   :target: ./_static/install_img_large/bracket_screw4.jpeg
 
 
 
@@ -249,17 +295,17 @@ Locate "Screw 4". Remove this screw, and reinstall with the bracket. Do not over
 Undisassemble
 +++++++++++++
 
-Rotate the radio onto it's side
+Partially re-assemble the radio, leaving the bottom case off
 
-Reinstall the front panel audio cable
+* Reinstall the Front Panel audio cable
+* Align the front panel with the top side alignment pins and put in position
+* Reinstall the two silver front panel retainer screws on the side closest to you (the bottom)
+* Reinstall the remaining two silver front panel retainer screws on the opposite side (the top)
+* Remove tape on the speaker (and PTRX-7300)
+* Reinstall the top case, including all screws on sides.
+* Do NOT reinstall the bottom case at this time. 
+* Do NOT reinstall the fan at this time.
 
-Rotate the radio onto it's back so the top is up
-
-Align the front panel locator pins on the top side of the radio
-
-Remove the tape on the speaker
-
-Reinstall the top side case, reinstalling all of the screws
 
 +++++++++++++++++++++
 Install the DE7301
@@ -272,6 +318,10 @@ Using a low tack tape, secure the indicated flex back to allow easier installati
 
 Reinstall the SD Card Flex Cable to the Front Panel
 
+.. note::
+
+   TODO: Re-shoot video with bracket installed.
+
 .. raw:: html
 
     <iframe id="ytplayer" type="text/html" width="640" height="360"
@@ -279,47 +329,63 @@ Reinstall the SD Card Flex Cable to the Front Panel
     frameborder="0"></iframe>
 
 
-Form the install kit, find the DE7301 main board and install it into the bracket
+Form the install kit, find the DE7301 main board and small screws.
+
+Install it into the bracket.
 
 .. raw:: html
 
     <iframe id="ytplayer" type="text/html" width="640" height="360"
-    src="https://www.youtube.com/embed/ZTaTUjlf8T4?autoplay=0"
+    src="https://www.youtube.com/embed/v-Zljn1XGl4?autoplay=0"
     frameborder="0"></iframe>
+    
+    
+++++++++++++++++++++++++++++++++++
+Plug in Flat Flex Cables to DE7301
+++++++++++++++++++++++++++++++++++
 
-Install the short flex from the mainboard gooes to the DE7301's "Motherboard" and inspect
-
-Install the long flex from the display goes to the DE7301's "Front Panel", and inspect
-
-
-.. note::
-
-    The DE7301 utilizes a different flex connector from the IC7300.
-    The DE7301 includes locking elements to retain the cable.
-    The locks must be pulled up before inserting the flex, and may fall down while installing.
-    Once the flex is in place, the locks must be engaged to retain the cable.
+Watch the following video, then continue to read the below instructions.
 
 .. raw:: html
 
     <iframe id="ytplayer" type="text/html" width="640" height="360"
-    src="https://www.youtube.com/embed/q-nYuKFJ3W4?autoplay=0"
+    src="https://www.youtube.com/embed/YdwlRo4nXDk?autoplay=0"
     frameborder="0"></iframe>
+    
+In the next step, you are going to connect the two flex cables to the DE7301. 
 
+The DE7301 utilizes a different flex connector from the IC7300, which includes a locking element to retain the cable. 
+The locks must be "pulled up" in order for the flex to be inserted. It may fall down while installing.
+After insertion, the locks must be "pushed down" to have the contacts engage and retain the cable. 
 
-After installing each cable, perform an inspection to ensure that the flex cable is seated properly:
+Unlike in the video, after installing each flex, perform an inspection. 
+Correct insertion of this cable is critical to the safety of your radio
+
+During inspection ensure:
+
+* The cable comes in perpendicular to the connector (Not at an angle).
+   * If it is not, the cable was inserted crooked
+* Ensure that the length of copper visible on each contact is of equal length.
+   * If they are not, the cable may not be fully seated or may be installed at an angle.
+* Apply light upward pressure on the flex cable, ensuring it does not dislodge the flex
+
+The short flex, between the Main Board and the DE7301 should look like this:
 
 .. image:: /img/install_img/new_short_flex_de7301_inspection.jpeg
    :target: ./_static/install_img_large/new_short_flex_de7301_inspection.jpeg
 
+The long flex, between the front panel and the DE7301 should look like this: 
+
 .. image:: /img/install_img/new_long_flex_de7301_inspection.jpeg
    :target: ./_static/install_img_large/new_long_flex_de7301_inspection.jpeg
+
 
 +++++++++++++
 Route Cabling
 +++++++++++++
 
 Route the ethernet cable in the back through the fan cutout. If you purchased a
-cable with the kit, it should fit tightly though the cutout in a single orientation.
+cable with the kit, it should fit tightly though the cutout in a single orientation. It may require some wiggling and force, but not excessive.
 If you are crimping your own RJ45, route the ethernet cable through the housing and crimp after it is routed.
 
 .. raw:: html
@@ -334,15 +400,21 @@ Route the USB-C Cable, following the same path
    :target: ./_static/install_img_large/routed_cabling.jpeg
 
 Plug in the ethernet cable to the DE7301
-Plug in the USB-C cable to the DE7301
 
 .. image:: /img/install_img/ethernet_plugged_in.jpeg
    :target: ./_static/install_img_large/ethernet_plugged_in.jpeg
-
-Gently remove the tape on the flex
+   
+   
+Plug in the USB-C cable to the DE7301
 
 .. image:: /img/install_img/usb_c_plugged_in.jpeg
    :target: ./_static/install_img_large/usb_c_plugged_in.jpeg
+
+
+Gently remove the tape on the flex
+
+.. image:: /img/install_img/remove_flex_tape.jpeg
+   :target: ./_static/install_img_large/remove_flex_tape.jpeg
 
 +++++++++++++++++++++++
 Perform Continuity Test
@@ -359,6 +431,11 @@ The best method to do this is bottom to top, left to right. Start by testing the
     This is critical, do not skip! This will detect incorrectly installed cables.
     If you hear a beep, stop! Contact support!
 
+
+.. note::
+
+   TODO: Re-shoot video with DE7301 Mark 1 Boards!
+
 .. raw:: html
 
     <iframe id="ytplayer" type="text/html" width="640" height="360"
@@ -367,9 +444,15 @@ The best method to do this is bottom to top, left to right. Start by testing the
     
 If you hear a beep, stop! Contact support!
 
+
+
 +++++++++++++
 Reinstall Fan
 +++++++++++++
+
+.. note::
+
+   TODO: Re-shoot images with correct colored cables.
 
 In the hardware kit, locate the fan spacer and four longer screws. Align the cutout in the spacer with the fan cable
 
@@ -381,7 +464,7 @@ Route the fan cable through the fan cutout. Align the Ethernet and USB-C cables 
 .. image:: /img/install_img/spacer_halfway.jpeg
    :target: ./_static/install_img_large/spacer_halfway.jpeg
 
-Install the spacer and fan, ensuring the new cables are routed through the spacer cutout
+Install the spacer, fan, and fan shroud, ensuring the new cables are routed through the spacer cutout
 
 .. image:: /img/install_img/spacer_installed.jpeg
    :target: ./_static/install_img_large/spacer_installed.jpeg
@@ -406,7 +489,7 @@ To determine if the install was successful, perform the following:
 
 .. warning::
 
-    If one of these steps fail, immediately remove 12V power
+    If one of these steps fail, immediately remove 12V power and contact support.
     
 * Leave the DE7301 USB Cable Disconnected
 * Connect IC7300 to dummy load, if available.
@@ -415,3 +498,8 @@ To determine if the install was successful, perform the following:
 * Press the PWR button
 * Verify the display is active and working
 * Verify the main VFO knob works by turning it three turns.
+
+++++++++++++++++++++++
+Installation Complete
+++++++++++++++++++++++
+Congratulations on completing your installation of the DE7301.
