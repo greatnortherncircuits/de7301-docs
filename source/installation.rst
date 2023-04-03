@@ -2,6 +2,8 @@
 Installation
 ============
 
+.. sectnum::
+
 ++++++++++++++++++++++
 Before you begin
 ++++++++++++++++++++++
@@ -50,14 +52,15 @@ Remove 8 screws on the sides of the case (each size has 4 screws)
 
 .. image:: /img/install_img/side_L_screws.png
    :target: ./_static/install_img_large/side_L_screws.png
-   
+   :width: 45%
    
 .. image:: /img/install_img/side_R_screws.png
    :target: ./_static/install_img_large/side_R_screws.png
+   :width: 45%
 
-++++++++++++++++++++++
-Disconnect Front Panel
-++++++++++++++++++++++
++++++++++++++++++++++++
+Disconnect SD Card
++++++++++++++++++++++++
 
 Locate the Front Panel SD Card Flat Flex Cable
 
@@ -70,6 +73,11 @@ and pinch with your thumb on top. In a smooth firm motion, unplug the flex cable
 .. image:: /img/install_img/remove_sd_flex.jpeg
    :target: ./_static/install_img_large/remove_sd_flex.jpeg
    
+   
++++++++++++++++++
+Front audio cable
++++++++++++++++++
+
 Towards the back of the radio, un-tuck the front panel audio cable from behind the shield can.
 
 .. image:: /img/install_img/free_audio_cable_untuck.jpeg
@@ -85,6 +93,11 @@ The freed audio cables should look similar to the following:
 
 .. image:: /img/install_img/freed_cables.jpeg
    :target: ./_static/install_img_large/freed_cables.jpeg
+
+
+++++++++++++++++++++++++++++
+Unplug Display Cable
+++++++++++++++++++++++++++++
 
 Locate the primary display flex cable.
 
@@ -139,9 +152,10 @@ Using a piece of low tack tape (Such as masking tape), tape the speaker into pla
    :target: ./_static/install_img_large/speaker_masking_tape.jpeg
    
    
-++++++++++++++
+--------------
 PTRX-7300 Note
-++++++++++++++
+--------------
+
 
 If you have a radio with a PTRX-7300 installed, ensure you secure the mod with tape as well. 
 A community member suggested `this configuration <./_static/install_img_large/DE7301_existing_radio_mod_taped.jpg>`_. 
@@ -182,7 +196,7 @@ Locate the front panel audio connector by following the remaining two cables, an
    :target: ./_static/install_img_large/front_panel_detached.jpeg
 
 ++++++++++++++++++++++++
-Replace Flat Flex Cables
+Remove Flat Flex
 ++++++++++++++++++++++++
 
 
@@ -208,10 +222,13 @@ In a smooth firm motion, *pulling straight up*, unplug the flex cable from the f
     <iframe id="ytplayer" type="text/html" width="640" height="360"
     src="https://www.youtube.com/embed/AMp75p8OWO0?autoplay=0"
     frameborder="0"></iframe>
-
+    
+++++++++++++++++++++++++
+Install Long Flat Flex
+++++++++++++++++++++++++
 
 In the parts kit, locate the longer flat flex cable.
-Pinching one end, insert it into the front panel connector with the shiny copper contacts facing towards your body.
+Pinching the blue backer, insert it into the front panel connector with the shiny copper contacts facing towards your body.
 Push gently until you feel the connector bottom out.
 
 .. raw:: html
@@ -225,7 +242,7 @@ Once installed, perform an inspection. Correct insertion of this cable is critic
 
 * The copper contacts are facing towards you.
    * If they are not, the cable is installed backwards
-* The cable comes in perpendicular to the connector (Not at an angle).
+* The cable comes in straight/perpendicular to the connector (Not at an angle).
    * If it is not, the cable was inserted crooked
 * Ensure that the length of copper visible on each contact is of equal length.
    * If they are not, the cable may not be fully seated or may be installed at an angle.
@@ -234,6 +251,10 @@ Once installed, perform an inspection. Correct insertion of this cable is critic
 
 .. image:: /img/install_img/new_long_flex_inspection_frontpanel.jpeg
    :target: ./_static/install_img_large/new_long_flex_inspection_frontpanel.jpeg
+
+++++++++++++++++++++++++
+Install Short Flat Flex
+++++++++++++++++++++++++
 
 Orient the main radio body so that the front of the radio is facing you.
 Locate the primary display flex connector
@@ -256,7 +277,7 @@ Once installed, perform an inspection. Correct insertion of this cable is critic
 
 * The copper contacts are facing towards you.
    * If they are not, the cable is installed backwards
-* The cable comes in perpendicular to the connector (Not at an angle).
+* The cable comes in straight/perpendicular to the connector (Not at an angle).
    * If it is not, the cable was inserted crooked
 * Ensure that the length of copper visible on each contact is of equal length.
    * If they are not, the cable may not be fully seated or may be installed at an angle.
@@ -268,7 +289,7 @@ Once installed, perform an inspection. Correct insertion of this cable is critic
 
 
 +++++++++++++++++++++++++
-Install Retaining Bracket
+Install Bracket
 +++++++++++++++++++++++++
 
 Locate and remove screws labeled 2, 3, 4 on the Main board. They are labeled on the main board
@@ -302,9 +323,27 @@ Partially re-assemble the radio, leaving the bottom case off
 * Reinstall the two silver front panel retainer screws on the side closest to you (the bottom)
 * Reinstall the remaining two silver front panel retainer screws on the opposite side (the top)
 * Remove tape on the speaker (and PTRX-7300)
-* Reinstall the top case, including all screws on sides.
+* Reinstall the top case, including the two pairs of screws on each side.
 * Do NOT reinstall the bottom case at this time. 
 * Do NOT reinstall the fan at this time.
+
+
++++++++++++++++++++++
+Reconnect SD Card
++++++++++++++++++++++
+
+Reinstall the SD Card Flex Cable to the Front Panel.
+
+.. note::
+
+   TODO: Re-shoot video with bracket installed.
+
+
+.. raw:: html
+
+    <iframe id="ytplayer" type="text/html" width="640" height="360"
+    src="https://www.youtube.com/embed/gcJ_mghSNKc?autoplay=0"
+    frameborder="0"></iframe>
 
 
 +++++++++++++++++++++
@@ -316,22 +355,10 @@ Using a low tack tape, secure the indicated flex back to allow easier installati
 .. image:: /img/install_img/tape_flex_in_way.jpeg
    :target: ./_static/install_img_large/tape_flex_in_way.jpeg
 
-Reinstall the SD Card Flex Cable to the Front Panel
-
-.. note::
-
-   TODO: Re-shoot video with bracket installed.
-
-.. raw:: html
-
-    <iframe id="ytplayer" type="text/html" width="640" height="360"
-    src="https://www.youtube.com/embed/gcJ_mghSNKc?autoplay=0"
-    frameborder="0"></iframe>
-
 
 Form the install kit, find the DE7301 main board and small screws.
 
-Install it into the bracket.
+Install the DE7301 with the component side up, using the two small screws at the bottom of the board.
 
 .. raw:: html
 
@@ -344,6 +371,8 @@ Install it into the bracket.
 Plug in Flat Flex Cables to DE7301
 ++++++++++++++++++++++++++++++++++
 
+In the next step, you are going to connect the two flex cables to the DE7301. 
+
 Watch the following video, then continue to read the below instructions.
 
 .. raw:: html
@@ -352,18 +381,28 @@ Watch the following video, then continue to read the below instructions.
     src="https://www.youtube.com/embed/YdwlRo4nXDk?autoplay=0"
     frameborder="0"></iframe>
     
-In the next step, you are going to connect the two flex cables to the DE7301. 
 
 The DE7301 utilizes a different flex connector from the IC7300, which includes a locking element to retain the cable. 
+When installing the flex, ensure you feel the connector "bottom out" before engaging the locks.
+
 The locks must be "pulled up" in order for the flex to be inserted. It may fall down while installing.
-After insertion, the locks must be "pushed down" to have the contacts engage and retain the cable. 
+After insertion, the locks must be engaged by "pushing down" to have the contacts engage and retain the cable. 
 
 Unlike in the video, after installing each flex, perform an inspection. 
-Correct insertion of this cable is critical to the safety of your radio
+Correct insertion of this cable is critical to the safety of your radio.
+
+
+.. warning::
+	
+
+	A later step (continuity test) will attempt to detect incorrect installation, 
+	however correct installation and proper inspection at this point is critical to the 
+	safety of your radio. 
+
 
 During inspection ensure:
 
-* The cable comes in perpendicular to the connector (Not at an angle).
+* The cable comes in straight/perpendicular to the connector (Not at an angle).
    * If it is not, the cable was inserted crooked
 * Ensure that the length of copper visible on each contact is of equal length.
    * If they are not, the cable may not be fully seated or may be installed at an angle.
@@ -381,7 +420,7 @@ The long flex, between the front panel and the DE7301 should look like this:
 
 
 +++++++++++++
-Route Cabling
+New Cabling
 +++++++++++++
 
 Route the ethernet cable in the back through the fan cutout. If you purchased a
@@ -476,7 +515,7 @@ Install the spacer, fan, and fan shroud, ensuring the new cables are routed thro
 Reinstall Bottom Cover
 ++++++++++++++++++++++
 
-Reinstall the bottom cover
+Reinstall the top case, including the two pairs of screws on each side.
 
 
 
